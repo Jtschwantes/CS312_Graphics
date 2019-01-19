@@ -60,11 +60,11 @@ void processUserInputs(bool & running)
  ***************************************/
 void DrawPoint(Buffer2D<PIXEL> & target, Vertex* v, Attributes* attrs, Attributes * const uniforms, FragmentShader* const frag)
 {
-    target[(int)v[0].y][(int)v[0].x] = attrs[0].color;
+    // Your code goes here
 }
 
 /****************************************
- * DRAW_LINE
+ * DRAW_TRIANGLE
  * Renders a line to the screen.
  ***************************************/
 void DrawLine(Buffer2D<PIXEL> & target, Vertex* const triangle, Attributes* const attrs, Attributes* const uniforms, FragmentShader* const frag)
@@ -184,7 +184,7 @@ int main()
         // Refresh Screen
         clearScreen(frame);
 
-        TestDrawPixel(frame);
+        // Your code goes here
 
         // Push to the GPU
         SendFrame(GPU_OUTPUT, REN, FRAME_BUF);
